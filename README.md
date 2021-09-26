@@ -1,4 +1,7 @@
+# node_mvc_api
+A basic node application that uses the mvc pattern.
 
+<!-- 
 $project
 ========
 
@@ -40,3 +43,4 @@ License
 -------
 
 The project is licensed under the BSD license.
+ -->
