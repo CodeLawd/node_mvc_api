@@ -51,7 +51,7 @@ module.exports = {
       } else if (data) {
         if (data.email == email && data.phoneNumber == phoneNumber) {
           console.log("Login Success");
-          res.render("users/dashboard", { data: data });
+          res.render("users/dashboard", { user: data });
         } else {
           console.log("Incorrect Credentials");
         }
@@ -63,7 +63,9 @@ module.exports = {
   },
 
   dashboard: (req, res) => {
+    // console.log(res);
     res.render("users/dashboard");
+    console.log(req.user);
   },
 };
 
